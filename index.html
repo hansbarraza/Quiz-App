@@ -8,29 +8,33 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <div class="main-container">
-        <h1 class="heading">Quiz Game</h1>
         <div class="content-container">
+            <nav class="quiz-nav" id="nav">
+            <h1 class="heading">Quiz Game</h1>
+            <div class="timer-content hide" id="timer">
+                <h6 class="time-text" id="time-left">Time Left:</h6>
+                <h6 id="time"></h6>
+            </div>
+            </nav>
             <div class="quiz-container hide" id="quiz">
-            
-                <h2 class="question-container" id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque sunt voluptas tenetur inventore, tempora, vitae perferendis labore quidem eos cum et dolorum. Corrupti fugit mollitia iste eligendi est veritatis.
-                </h2>
+                <h2 class="question-container" id="question">What does HTML stand for?</h2>
                 <div class="answer-container" id="answer-btns">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+                    <button class="btn answers" id="option1">Hyperlinks and Text Markup Language</button>
+                    <button class="btn answers" id="option2">Hyper Text Markup Language</button>
+                    <button class="btn answers" id="option3">Hyper Text Making Language</button>
+                    <button class="btn answers" id="option4">Hyper Text Mark Language </button>
                 </div>
             </div>
             <div class="start-control" id="start-content">
-                <!-- <div class=""> -->
-                    <h2 class="">Try to answer as many questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
-                <!-- </div> -->
-                <!-- <div class=""> -->
+                    <h2 class="">Try to answer as many questions.<br>Let's see your vehicle knowledge.<br>You will have 30 seconds to finish.<br></h2>
                     <button class="start-btn btn" id="start-btn">Start</button>
-                <!-- </div> -->
             </div>
-    </div>
+            <button class="restard-btn btn hide" id="restart-btn">Submit</button>
+            <div class="next-cont hide" id="next-btn">
+                <button class="btn" id="next">Next</button>
+            </div>
+            <div class="results-cont" id="results-container"></div>
+        </div>
     <script src="assets/script.js"></script>
 </body>
 </html>
